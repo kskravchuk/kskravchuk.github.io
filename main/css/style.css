@@ -1,8 +1,11 @@
-.body {
+html {
+    overflow-x: hidden;
+}
+
+body {
 
     width: 100%;
     background-size: 100%;
-    line-height: 1.6;
     margin: 0;
 }
 
@@ -170,10 +173,11 @@ justify-content: center;
     width: 620px;
     height: 457px;
     }
-    .container{
-      display: flex;
-      flex-direction: column;
-    }
+
+.container1{
+    display: flex;
+    flex-direction: column;
+ }
     .text_workplace{
       color: #FFFFFF;
       text-align: left;
@@ -198,7 +202,7 @@ justify-content: center;
       font-family: 'Recursive', sans-serif;
       font-size: 18px;
       margin-top: 45px;
-      width: 450px;
+      width: 430px;
       height: 242px;
     }
 
@@ -206,7 +210,7 @@ justify-content: center;
         text-indent: 20px;
         font-family: 'Recursive', sans-serif;
         font-size: 18px;
-        width: 450px;
+        width: 400px;
         margin-top: -120px;
       }
 
@@ -216,7 +220,7 @@ justify-content: center;
         text-decoration: none;
         color: #fff;
         text-align: center;
-        margin-top: 25px;
+        margin-top: 40px;
         background-color: #6C63FF;
         width: 277px;
         height: 60px;
@@ -246,93 +250,93 @@ justify-content: center;
     }
 
 /*ВОСПОМИНАНИЯ ВЫПУСКНИКОВ*/
-.bloсk_HOMEPAGE_memories {
-    margin: 50;
+.block_HOMEPAGE_memories{
     display: flex;
     flex-direction: row;
-}
-
-
-.texts_memories {
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    margin-left: 130px;
-}
-
-
-.text1_memories {
-    font-family: 'Cormorant Garamond';
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-}
-
-
-.text2_memories {
-    text-indent: 20px;
-    color: #fff;
-    font-family: 'Recursive', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    width: 493px;
-    margin-top: -5px;
-}
-
-.text3_memories {
-    text-indent: 20px;
-    color: #fff;
-    font-family: 'Recursive', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    width: 493px;
-}
-
- 
-.menu_sign1 {
-display: inline-block;
-text-decoration: none;
-color: #fff;
-text-align: center;
-margin-top: 25px;
-background-color: #6C63FF;
-width: 277px;
-height: 60px;
-border-radius: 30px;
-}
-
-.text_knopka {
-    padding-top: 17px;
-    font-family: 'Recursive', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.menu_sign1:hover { 
-background-color: #3b32eb;
-transition: .3s;
-}
-
-.photo_memories {
-    margin-left: 100px;
-    margin-top: 60px;
-}
-
-.photo_memory {
+    justify-content: center;
+    }
+.photo_memory{
     width: 620px;
     height: 457px;
-}
+    margin-left: 20px;
+    }
 
-.klyaksa3 {
-    position: absolute;
-    top: 2100;
-    right: 0;
-    z-index: -1;
-}
+.container2{
+    display: flex;
+    flex-direction: column;
+ }
+    .text_memory{
+      color: #FFFFFF;
+      text-align: left;
+      display: flex;
+      justify-content: center;
+     align-items: center;
+     margin-top: 60px;
+     margin-bottom: 60px;
+    }
+    
+    .texts_memories {
+        display: flex;
+        flex-direction: column;
+     
+    }
+    
+    .text1_memories{
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700px;
+      font-size: 40px;
+    
+    }
+    .text2_memories{
+      text-indent: 20px;
+      font-family: 'Recursive', sans-serif;
+      font-size: 18px;
+      margin-top: -15px;
+      width: 450px;
+      height: 242px;
+    }
 
-.line2 {
-    margin-top: 50px;
-}
+    .text3_memories{
+        text-indent: 20px;
+        font-family: 'Recursive', sans-serif;
+        font-size: 18px;
+        width: 450px;
+        margin-top: -95px;
+      }
+
+    .menu_sign1 {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        margin-top: 25px;
+        background-color: #6C63FF;
+        width: 277px;
+        height: 60px;
+        border-radius: 30px;
+        }
+        
+    .text_knopka {
+            padding-top: 17px;
+            font-family: 'Recursive', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        
+    .menu_sign1:hover { 
+        background-color: #3b32eb;
+        transition: .3s;
+    }
+    .klyaksa3 {
+        position: absolute;
+        top: 2100;
+        right: 0;
+        z-index: -1;
+    }
+    
+    .line2 {
+        margin-top: 50px;
+    }
 
 /*ИГРА/ТЕСТ*/
 
@@ -492,10 +496,10 @@ transition: .3s;
 
 
 .HOMEPAGE_CONTACTS1 {
-  display: flex;
-  flex-direction: row;
-  margin-left: 60px;
-  margin-top: -40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -40px;
+    justify-content: center;
  
 }
 
@@ -514,7 +518,7 @@ transition: .3s;
 .klyaksa2 {
     position: absolute;
     left: 0;
-    top: 3970;
+    top: 3980;
     z-index: -1;
 }
 
@@ -522,7 +526,10 @@ transition: .3s;
 .footer{
     width: 100%;    
     display: flex;
-    top:80;
+    margin-top: 140px;
+    flex-direction: column;
+    background-color: #111111;
+
     
     }
     
@@ -530,7 +537,7 @@ transition: .3s;
         width: 100%;
         height: 3px;
         background-color: #fff;
-        margin-top: 180px;
+       
     }
     
     .general {
@@ -695,7 +702,6 @@ transition: .3s;
 }
 
 
-
 .line1 {
     margin-top: -50px;
 }
@@ -711,15 +717,16 @@ transition: .3s;
 }
 
 .undertitle {
-    font-size: 13px !important;
+    font-size: 15px !important;
     margin-top: 10px;
+    width: 410px;
 
 }
 
 .title2{
     font-size: 15px !important;
     margin-top: -160px;
-    width: 440px;
+    width: 400px;
     
 }
 .workplaces_sign1 {
@@ -732,23 +739,7 @@ transition: .3s;
     margin-top: -3px;
 }
 
-.texts_memories {
-    margin-left: 30px;
-}
 
-.text1_memories {
-    font-size: 30px;
-}
-
-.text2_memories {
-    font-size: 15px !important; 
-    
-}
-
-.text3_memories {
-    font-size: 15px !important; 
-    
-}
 
 .menu_sign1 {
     width: 240px;
@@ -760,11 +751,31 @@ transition: .3s;
     margin-top: -3px; 
 }
 
+
 .photo_memory {
     width: 450px;
     height: 330px;
-   margin-left: -100px;
 }
+
+
+
+.text1_memories {
+    font-size: 30px;
+}
+
+.text2_memories {
+    font-size: 15px !important;
+    margin-top: 10px;
+
+}
+
+.text3_memories{
+    font-size: 15px !important;
+    margin-top: -160px;
+    width: 440px;
+    
+}
+
 
 .rectangle_game {
     width: 48%;
@@ -812,26 +823,6 @@ width: 250px;
 
 @media only screen and (max-device-width: 660px){
 
-.texts_memories {
-    margin-left: 30px;
-}
-
-.text1_memories {
-    font-size: 30px;
-}
-
-.text2_memories {
-    font-size: 11px; 
-    width: 460px;
-    
-}
-
-.text3_memories {
-    font-size: 11px; 
-    width: 460px;
-    
-}
-
 .menu_sign1 {
     width: 240px;
     height: 50px;
@@ -840,12 +831,6 @@ width: 250px;
 .text_knopka {
     font-size: 15px;
     margin-top: -3px; 
-}
-
-.photo_memory {
-    width: 450px;
-    height: 330px;
-     margin-left: -65px;
 }
 
 .logo {
@@ -868,19 +853,84 @@ width: 250px;
     margin-left: -10px;
 }
 
-.container {
-    margin-left: -20px;
-}
-
 .logo {
     margin-left: 10px;
 }
 
-.bloсk_HOMEPAGE_memories {
-    margin-left: -100px;
+.klyaksa2 {
+    position: absolute;
+    left: 0;
+    top: 3880;
+    z-index: -1;
 }
 
-.photo_memory {
-    margin-left: -50px;
 }
+
+@media only screen and (max-device-width: 1200px) and (min-device-width:1000px) {
+.macbook {
+    width: 540px;
+    height: 710px;
+    margin-top: -70px;
 }
+
+.image_workplace {
+    width: 450px;
+    height: 330px;
+    margin-top: 20px;
+    
+}
+
+.title2{
+    font-size: 18px;
+    margin-top: -120px;
+    width: 410px;
+    
+}
+
+.klyaksa2 {
+    position: absolute;
+    left: 0;
+    top: 4100;
+    z-index: -1;
+}
+
+}
+
+@media only screen and (max-device-width: 1140px) and (min-device-width:994px) {
+    .photo_memory {
+        width: 450px;
+        height: 330px;
+    }
+    
+    .text1_memories {
+        font-size: 40px;
+    }
+    
+    .text2_memories {
+        font-size: 18px !important;
+        margin-top: 10px;
+    
+    }
+    
+    .text3_memories{
+        font-size: 18px !important;
+        margin-top: -100px;
+        width: 440px;
+        
+    }
+
+    .image_workplace {
+        width: 450px;
+        height: 330px;
+        margin-top: 20px;
+}
+
+.klyaksa2 {
+    position: absolute;
+    left: 0;
+    top: 4180;
+    z-index: -1;
+}
+
+}
+
