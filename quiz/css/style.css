@@ -1,0 +1,362 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+
+    width: 100%;
+    background-size: 100%;
+    margin: 0;
+}
+
+.container{
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+
+/*header*/
+.header1{
+    width: 100%;    
+    display: flex;
+    top:0;
+    position: sticky;
+    background-color: #111111;
+    height: 95px;
+}
+
+
+.header__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    margin-top: -10px;
+    margin-left: -60px;
+}
+
+.logo2 {
+   width: 125px;
+   height: 125px;
+}
+
+.text_menu {
+    font-family: 'Recursive', sans-serif;  
+    font-size: 14px;
+    font-weight: 400;
+    width: 280px;
+    height: 34px;
+    color: #fff;
+    margin-bottom: 33px;
+    margin-left: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    font-size: 18px;
+    z-index: 1000;
+    font-family: 'Recursive', sans-serif;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.menu__link {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 4px solid transparent;
+    padding-bottom: 5px;
+    transition: .3s linear;
+ }
+
+ .menu__link:hover {
+    border-bottom: 4px solid #6C63FF;
+ }
+
+ .menu__link.active {
+    border-bottom: 4px solid #6C63FF;
+ }
+
+ .right_klyaksa{
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: -1;
+}
+.left_klyaksa{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 330;
+    z-index: -1;
+    }
+
+.test_nazv {
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 75px;
+    text-align: center;
+}
+/*footer*/
+.footer{
+    width: 100%;    
+    display: flex;
+    margin-top: 140px;
+    flex-direction: column;
+    background-color: #111111;
+
+    
+    }
+    
+    .line {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+       
+    }
+    
+    .general {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    
+    .text1, .text2, .text3 {
+        font-family: 'Recursive', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        color: #fff;
+        padding-top: 20px;
+        border-bottom: solid 2px #6C63FF;
+        
+    }
+    
+    .text_information {
+        font-family: 'Recursive', sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        color: #BAAEAE;
+        width: 359px;
+        text-align: left;
+    }
+    
+    .icons1_footer {
+        margin-top: 40px;
+    }
+
+    .icon1_inst {
+        width: 33px;
+        height: 33px;
+    }
+    .icon2_vk {
+    margin-left: 20px;
+    }
+    
+    .icons_3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+
+    .icons_4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+
+    .icons_5 {
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
+    
+    .text_locat, .text_tel, .text_mail {
+    margin-left: 20px;
+    
+    font-family: 'Recursive', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: #BAAEAE;
+    }
+    
+    .icons_4, .icons_5 {
+        margin-top: 40px;
+    }
+    
+    .useful_links {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        line-height: 8px;
+    }
+    
+    .footer__link {
+    font-family: 'Recursive', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: #BAAEAE;
+    text-decoration: none;
+    margin-top: -7px;
+    }
+    
+    .footer__link:hover {
+        color: #3b32eb;
+        transition: .3s;
+    }
+    
+    .texts_footer_down {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-right: 300px;
+        margin-top: 80px;
+        }
+        
+    .text1_footer_down, .text2_footer_down, .text3_footer_down {
+        font-family: 'Recursive', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #BAAEAE;
+        }
+        
+    .text2_footer_down {
+        text-decoration: underline;
+        margin-top: 13px;
+        }
+        
+.text3_footer_down {
+    text-decoration: underline;
+    margin-left: 450px;
+    margin-top: -45px;
+}
+        
+.logo_footer {
+        margin-top: -130px;
+        float: right;
+}
+
+.svyaz {
+    display: flex;
+    flex-direction: column;
+}
+
+
+ .question {
+     color: #fff;
+     font-family: 'Recursive', sans-serif;
+     font-size: 20px;
+     margin-top: 100px;
+     text-align: center;
+     font-weight: 700;
+     width: 65%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .answer {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    color: #111111;
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+ }
+
+ .answer li {
+    background: #fff;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.answer li:hover {
+    background: #6C63FF;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.answer li:active{
+    background: #6C63FF;
+}
+
+.result {
+    padding: 50px 0;
+    font-size: 20px;
+    font-family: 'Recursive', sans-serif;
+    width: 75%;
+    margin-left: auto;
+     margin-right: auto;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    color: #fff;
+}
+
+.result-img {
+    max-width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: -35px;
+   
+}
+
+.reload-button {
+    display: block;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.88);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    min-width: 200px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.reload-button:hover {
+    background: #6C63FF;
+    transition: .3s;
+}
+
+@media only screen and (max-device-width: 1250px){
+    .logo {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-device-width: 660px){
+
+
+
+}
+
+@media (max-device-width: 992px){
+    .o_nas {
+        width: 250px;
+        }
+        
+        .svyaz {
+            width: 330px;
+            margin-top: -3px;
+            margin-left: 65px;
+        }
+    }
