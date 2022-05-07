@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-.container{
+.container, .container_footer{
 
     width: 100%;
     max-width: 1200px;
@@ -59,7 +59,7 @@ body {
 .menu {
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 50%;
     font-size: 18px;
     z-index: 1000;
     font-family: 'Recursive', sans-serif;
@@ -613,6 +613,7 @@ justify-content: center;
     .useful_links {
         display: flex;
         flex-direction: column;
+        width: 170px;
         
     }
 
@@ -670,6 +671,7 @@ justify-content: center;
 .svyaz {
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -816,10 +818,15 @@ width: 250px;
 }
 
 .svyaz {
-    width: 330px;
-    margin-top: -3px;
-    margin-left: 65px;
+    width: 200px;
+   
 }
+
+.useful_links {
+    width: 20%;
+}
+
+
 }
 
 @media only screen and (max-device-width: 660px){
@@ -841,19 +848,23 @@ width: 250px;
 
 }
 
-@media only screen and (max-device-width: 1000px) {
+@media only screen and (max-device-width: 1100px) and (min-device-width:1000px) {
+    .logo_footer {
+        margin-right: -100px;
+    }
+}
+
+/*@media only screen and (max-device-width: 1000px) {
 .macbook {
     width: 500px;
     height: 660px;
     margin-top: -70px;
     margin-left: -20px;
     }   
-}
+    
+}*/
 
 @media (max-device-width: 1230px) {
-.macbook {
-    margin-left: -10px;
-}
 
 .logo {
     margin-left: 10px;
@@ -866,14 +877,15 @@ width: 250px;
     z-index: -1;
 }
 
+
 }
 
 @media only screen and (max-device-width: 1200px) and (min-device-width:1000px) {
 .macbook {
-    width: 540px;
+    width: 490px;
     height: 710px;
-    margin-top: -70px;
-}
+    margin-top: -90px;
+    }
 
 .image_workplace {
     width: 450px;
@@ -896,6 +908,9 @@ width: 250px;
     z-index: -1;
 }
 
+.text3_footer_down {
+    width: 230px;
+}
 }
 
 @media only screen and (max-device-width: 1140px) and (min-device-width:994px) {
@@ -934,5 +949,150 @@ width: 250px;
     z-index: -1;
 }
 
+
+}
+
+@media only screen and (max-device-width: 1240px){
+    .container_footer{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .text_information{
+    width: 80%;
+    margin-right:0;
+    }
+    .text1{
+    width: 80%;
+    margin-right: 0;
+    }
+    .o_nas {
+    width: 250px;
+    }
+    
+    .text3 {
+        width: 120%;
+        
+    }
+}
+
+.logo_burger {
+    width: 85px;
+    height: 85px;
+    margin-left: -50px;
+}
+
+.container11 {
+    margin: auto;
+    width: 100%;
+    background-color: #111111;
+    color: #fff;
+    text-align: center;
+    height: 80px;
+    visibility: hidden;
+    top: 0;
+    position: fixed;
+    
+}
+
+#check-menu {
+    display: none;
+}
+
+label {
+display: flex;
+justify-content: center;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+cursor: pointer;
+line-height: 40px;
+font-size: 25px;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 700px;
+
+}
+
+
+.burger-line {
+    position: absolute;
+    top: 33px;
+    right: 100px;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: .4s all;
+}
+
+.burger-line:nth-of-type(2), 
+.burger-line:nth-of-type(3) {
+top: 43px;
+right: 100px;
+
+}
+
+.burger-line:nth-of-type(4) {
+    top: 53px;
+    right: 100px;
+}
+
+.main-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transform: translateY(100%);
+    transition: .4s all;
+}
+
+.main-menu a {
+display: block;
+width: 100%;
+padding: 10px;
+color: #fff;
+font-family: 'Recursive', sans-serif;
+font-size: 26px;
+background-color: #111111;
+text-decoration: none;
+border: 1px solid #6C63FF;
+}
+
+.main-menu a:hover {
+    background-color: #6C63FF;
+    
+}
+
+#check-menu:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 16px;
+}
+
+#check-menu:checked ~ .burger-line:nth-of-type(1),
+#check-menu:checked ~ .burger-line:nth-of-type(4) {
+  display: none;
+}
+
+#check-menu:checked ~ .burger-line:nth-of-type(2) {
+    transform: rotate(45deg);
+  }
+
+  #check-menu:checked ~ .burger-line:nth-of-type(3) {
+    transform: rotate(-45deg);
+  }
+
+  @media only screen and (max-device-width: 1240px){
+    .container11{
+    visibility: visible;
+    }
+
+    .header__inner {
+        visibility: hidden;
+    }
 }
 
