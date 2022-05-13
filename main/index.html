@@ -6,10 +6,47 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Recursive&display=swap" rel="stylesheet">
-    </head>
+        <link rel="shortcut icon" href="css/flavicon.png" type="image/png">
+        <title>УИР</title>
+      </head>
 
         <body bgcolor="#111111">
-            <header class="header1">
+          <section>
+            <div class="loader">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+            </div>
+            </section>
+
+            <script>
+              window.onload = function () {
+                document.body.classList.add('loaded_hiding');
+                window.setTimeout(function () {
+                  document.body.classList.add('loaded');
+                  document.body.classList.remove('loaded_hiding');
+                }, 500);
+              }
+            </script>
+           
+           <header class="header1">
                 <div class="container">
                     <div class="header__inner">
     
